@@ -50,22 +50,22 @@ use strict;
 #
 
 # Update your NDK base path here (not including the NDK folder itself)
-my $NDK_BASE = "C:/";
+my $NDK_BASE = "/Users/user/";
 
-# Valid NDK versions are: r7b, r8b
-my $NDK_VERSION = "r8b";
+# Valid NDK versions are: r7b, r8b, r8e
+my $NDK_VERSION = "r8e";
 
-# Valid Host architectures are: windows, linux-x86
-my $ARCH_HOST = "windows";
+# Valid Host architectures are: windows, linux-x86, darwin-x86_64
+my $ARCH_HOST = "darwin-x86_64";
 
 # Valid Target architectures are: arm, mips, x86
 my $ARCH_TARGET = "arm";
 
 # Valid SDK levels are: android-3, android-4, android-5, android-8, android-9, android-14
-my $SDK_LEVEL = "android-14";
+my $SDK_LEVEL = "android-5";
 
 # Valid GCC versions are: 4.4.3, 4.6
-my $GCC_VERSION = "4.6";
+my $GCC_VERSION = "4.4.3";
 
 my $NDK_PATH = "$NDK_BASE/android-ndk-$NDK_VERSION";
 my $PLATFORM_BASE = "$NDK_PATH/platforms/$SDK_LEVEL/arch-$ARCH_TARGET";
